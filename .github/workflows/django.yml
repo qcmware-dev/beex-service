@@ -31,4 +31,4 @@ jobs:
     - name: Run Server
       run: |
         cat commands >> deploy.sh
-        python manage runserver 8000
+        python manage.py runserver 8000
