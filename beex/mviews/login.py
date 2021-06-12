@@ -24,7 +24,7 @@ def LoginViewSet(request):
         json_data = json.dumps(response_result, indent=4)
         return HttpResponse(json_data, content_type="application/json")
     p_username = parameters['username']
-    print(parameters)
+    # print(parameters)
     beex_user_objects = Beex_user.objects
     response_result["message"] = "El usuario no ha sido registrado!"
     is_username = {}
