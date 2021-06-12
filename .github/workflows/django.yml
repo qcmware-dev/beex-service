@@ -28,7 +28,3 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
-    - name: Run Server
-      run: |
-        cat commands >> deploy.sh
-        python manage.py runserver 8000
