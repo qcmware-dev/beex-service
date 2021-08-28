@@ -5,7 +5,7 @@ from rest_framework import routers
 from beex import views
 
 router = routers.DefaultRouter()
-router.register(r'auth', views.UserViewSet)
+router.register(r'auth', views.UserViewSet, basename='auth')
 router.register(r'users', views.BeexUserViewSet)
 router.register(r'groups', views.GroupViewSet)
 

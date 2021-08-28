@@ -19,7 +19,8 @@ class User(models.Model):
     metadata = models.JSONField()
 
     def save(self, *args, **kwargs):
-        print(args)
+        print("=======\n", {{type(v) for v in enumerate(val)} for val in args}, "\n=======")
+        print("Fin de print\n")
         try:
             super(User, self).save(*args, **kwargs)
         except Exception as e:
@@ -27,4 +28,3 @@ class User(models.Model):
 
     def get(self, *args, **kwargs):
         return super(User, self).objects.get(*args, **kwargs)
-

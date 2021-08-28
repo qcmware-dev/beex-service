@@ -18,4 +18,5 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class BeexUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Beex_user
+        print("_______\n", model.objects.all(), "\n-------")
         fields = ['username', 'email', 'phone']
